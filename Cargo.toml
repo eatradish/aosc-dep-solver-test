@@ -1,0 +1,13 @@
+[package]
+name = "aosc-dep-solver"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+libaosc = { git = "https://github.com/AOSC-Dev/libaosc-rs", rev = "9eb88160a1070b3b92439efcb5b184eb44380a33"}
+eyre = "0.6"
+nom = "7"
+log ="0.4"
+once_cell = "1"
+serde = { version = "1", features = ["derive"] }
+varisat = "0.2.2"
